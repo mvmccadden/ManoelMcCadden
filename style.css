@@ -8,7 +8,7 @@
 
 body
 {
-    background: #080808;
+    background: #231e25;
     color: #fff;
 }
 
@@ -27,6 +27,7 @@ nav
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding-right: 20px;
 }
 
 .logo
@@ -38,6 +39,7 @@ nav ul li
 {
     display: inline-block;
     list-style: none;
+    justify-content: center;
     margin: 10px 20px;
 }
 
