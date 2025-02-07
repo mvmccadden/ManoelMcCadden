@@ -1,0 +1,174 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Amaranth', sans-serif;
+    box-sizing: border-box;
+}
+
+body
+{
+    background: #080808;
+    color: #fff;
+}
+
+#header
+{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+nav
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo
+{
+    width: 140px;
+}
+
+nav ul li
+{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a
+{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+/*
+COLORS
+    PURPLE: #a438c1
+    GOLD:   #e1bb59
+*/
+
+nav ul li a::after
+{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: #a438c1;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.375s;
+}
+
+nav ul li a:hover::after
+{
+    width: 100%;
+    background: #e1bb59;
+}
+
+.header-text
+{
+    padding: 10px 10%;
+    margin-top: 10%;
+    font-size: 40px;
+}
+
+.header-text h1
+{
+    margin-top: 5%;
+    font-size: 60px;
+}
+
+.header-text h1 span
+{
+    color: #e1bb59;
+}
+
+/*
+    About Section 
+*/
+
+
+#about
+{
+    padding: 80px 0;
+    background-color: #231e25;
+    color: #fff;
+}
+
+.row
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.aboutText
+{
+    flex-basis: 60%;
+}
+
+.aboutText span
+{
+    color: #e1bb59;
+}
+
+.subTitle
+{
+    font-size: 60px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.aboutContent
+{
+    padding: 5% 10%;
+    text-align: left;
+    font-size: 18px;
+    font-weight: 100;
+}
+
+.aboutTitles
+{
+    flex-basis: 35%;
+    text-align: left;
+    font-size: 20px;
+    font-weight: 200;
+    line-height: 1;
+}
+
+.titleNames
+{
+    cursor: pointer;
+    margin-right: 40px;
+    position: relative;
+}
+
+.titleDetails ul li
+{
+    list-style: none;
+    margin: 5px 0;
+    line-height: 1.5;
+    margin-left: 15px;
+    font-size: 18px;
+}
+
+.titleDetails ul li .spanTitle
+{
+    color: #e1bb59;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.titleDetails ul li .spanDetails
+{
+    display: inline-block;
+    margin-left: 5px;
+}
