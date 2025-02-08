@@ -27,7 +27,6 @@ nav
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding-right: 20px;
     position: fixed;
     top: 0;
     width: 100%;
@@ -39,6 +38,7 @@ nav.scroll
 {
     background: #231e25;
     height: 140px;
+    z-index: 100;
 }
 
 .logo
@@ -50,7 +50,7 @@ nav ul
 {
     display: flex;
     justify-content: center;
-    flex-grow: 1;
+    padding-right: 5%;
 }
 
 nav ul li
@@ -95,7 +95,7 @@ nav ul li a:hover::after
 
 .header-text
 {
-    padding: 10px 10%;
+    padding: 10px 6%;
     padding-top: 350px;
     font-size: 40px;
 }
@@ -166,7 +166,6 @@ nav ul li a:hover::after
 
 .titleNames
 {
-    cursor: pointer;
     margin-right: 40px;
     position: relative;
 }
@@ -192,3 +191,231 @@ nav ul li a:hover::after
     display: inline-block;
     margin-left: 5px;
 }
+
+/* 
+    Programming Portfolio
+*/
+
+.portfolioMain
+{
+    padding: 5% 6%; 
+    flex-basis: 60%;
+}
+
+.sectionTitle
+{
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.sectionTitle span
+{
+    color: #e1bb59;
+}
+
+.contentTitles
+{
+    margin: 15px 10px;
+    font-size: 40px;
+    font-weight: 200;
+}
+
+.contentTitles span
+{
+    color: #a438c1;
+}
+
+.contentDetails
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contentDetails iframe
+{
+    margin-left: 10px;
+    flex-basis: 35%;
+}
+
+.contentDetails p
+{
+    flex-basis: 60%;
+    padding: 0 10% 0 10px;
+}
+
+/*
+    Music Portfolio
+*/
+
+
+/*
+    Contact
+*/
+
+.row
+{
+    padding: 5% 6%; 
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contact-left
+{
+    flex-basis: 35%;
+}
+
+.contact-right
+{
+    flex-basis: 60%;
+}
+
+.content-left p
+{
+    margin-right: 15px;
+    font-size: 25px;
+}
+
+.emailIcon
+{
+    margin-right: 15px;
+    margin-top: 15px;
+    width: 40px;
+    filter: 
+        invert(71%) 
+        sepia(94%) 
+        saturate(269%) 
+        hue-rotate(357deg) 
+        brightness(92%) 
+        contrast(91%);
+}
+
+.phoneIcon
+{
+    margin-right: 15px;
+    margin-top: 15px;
+    width: 40px;
+    filter: 
+        invert(71%) 
+        sepia(94%) 
+        saturate(269%) 
+        hue-rotate(357deg) 
+        brightness(92%) 
+        contrast(91%);
+}
+
+.socials a
+{
+    padding-top: 50px;
+    filter: 
+        invert(30%) 
+        sepia(61%) 
+        saturate(2227%) 
+        hue-rotate(267deg) 
+        brightness(85%) 
+        contrast(92%);
+    display: inline-block;
+    transition: 0.25s;
+}
+
+.socials a:hover
+{
+    filter: 
+        invert(71%) 
+        sepia(94%) 
+        saturate(269%) 
+        hue-rotate(357deg) 
+        brightness(92%) 
+        contrast(91%);
+    transform: translateY(-5px);
+}
+
+.youtube
+{
+    width: 40px;
+}
+
+.github
+{
+    margin-left: 35px;
+    width: 40px;
+}
+
+.linkedin
+{
+    margin-left: 35px;
+    width: 40px;
+}
+
+.button
+{
+    display: block;
+    margin-top: 40px;
+    width: fit-content;
+    color: #fff;
+    padding: 14px 50px;
+    text-decoration: none;
+    border: 1px solid #231e25;
+    border-radius: 6px;
+    background-color: #a438c1;
+    transition: 0.25s;
+}
+
+.button:hover
+{
+    background-color: #e1bb59;
+}
+
+.content-right form
+{
+    width: 100%;
+}
+
+form input, form textarea
+{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #3f3941;
+    padding: 15px;
+    margin: 15px;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+form .button2
+{
+    font-size: 18px;
+    cursor: pointer;
+    display: block;
+    margin-top: 40px;
+    width: fit-content;
+    border: 1px solid #231e25;
+    border-radius: 6px;
+    color: #fff;
+    padding: 14px 10%;
+    margin: 15px 20px;
+    background-color: #a438c1;
+    transition: 0.25s;
+}
+
+form .button2:hover
+{
+    background-color: #e1bb59;
+}
+
+.copyright
+{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    background: #3f3941;
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+/*
+    CSS for phone screens
+*/
+
