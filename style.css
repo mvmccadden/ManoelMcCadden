@@ -28,11 +28,29 @@ nav
     justify-content: space-between;
     flex-wrap: wrap;
     padding-right: 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #231e2500;
+    transition: 0.5s;
+}
+
+nav.scroll
+{
+    background: #231e25;
+    height: 140px;
 }
 
 .logo
 {
     width: 140px;
+}
+
+nav ul
+{
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
 }
 
 nav ul li
@@ -78,7 +96,7 @@ nav ul li a:hover::after
 .header-text
 {
     padding: 10px 10%;
-    margin-top: 10%;
+    padding-top: 350px;
     font-size: 40px;
 }
 
