@@ -1,3 +1,9 @@
+<!-- SOURCES -->
+<!-- https://codepen.io/sosuke/pen/Pjoqqp -->
+<!-- https://www.flaticon.com/search?word=github -->
+<!-- https://www.youtube.com/watch?v=0YFrGy_mzjY -->
+<!-- Using prism for syntax highlighting for code  https://prismjs.com/index.html -->
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -6,6 +12,7 @@
         <meta name="viewport" content="width=device-width, inital-scale=1.0">
         <title>Manoel McCadden's Portfolio</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="prism.css">
     </head>
     <body>
         <div id="header">
@@ -13,11 +20,11 @@
                 <nav>
                     <img src="images/logo.png" class="logo">
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Programming Portfolio</a></li>
-                        <li><a href="#">Music Portfolio</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#portfolioProgramming">Programming Portfolio</a></li>
+                        <li><a href="#portfolioMusic">Music Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </nav>
                 <div class="header-text">
@@ -87,18 +94,32 @@
 
 <!-- Programming Portfolio -->
 
-        <div id="portfolioMain">
+        <div id="portfolioProgramming">
             <div class="portfolioMain">
                 <h1 class="sectionTitle"><span>Programming</span> Work</h1>
                 <p class="contentTitles">Cretaceous<span> Clash</span></p>
-                <p class="contentTitles">Rogue<span> Waters</span></p>
+                <p class="contentTitles">Clairty<span>++</span></p>
+                <div class="codeDetails">
+                    <button class="button3" onclick="toggleCode('code1')">ClaPP_ECSManager.cpp</button>
+                    <pre id="code1"><code id="code1" class="language-cpp" style="display: none;"></code></pre>
+                    <button class="button3" onclick="toggleCode('code2')">ClaPP_ECSManager.h</button>
+                    <pre id="code2"><code id="code2" class="language-cpp" style="display: none;"></code></pre>
+                    <button class="button3" onclick="toggleCode('code3')">ClaPP_SystemManager.cpp</button>
+                    <pre id="code3"><code id="code3" class="language-cpp" style="display: none;"></code></pre>
+                    <button class="button3" onclick="toggleCode('code4')">ClaPP_SystemManager.h</button>
+                    <pre id="code4"><code id="code4" class="language-cpp" style="display: none;"></code></pre>
+                    <button class="button3" onclick="toggleCode('code5')">ClaPP_ComponentManager.h</button>
+                    <pre id="code5"><code id="code5" class="language-cpp" style="display: none;"></code></pre>
+                    <button class="button3" onclick="toggleCode('code6')">ClaPP_EntityManager.h</button>
+                    <pre id="code6"><code id="code6" class="language-cpp" style="display: none;"></code></pre>
+                </div>
                 <p class="contentTitles"><span>Nomen</span>tum</p>
             </div>
         </div>
 
 <!-- Music Portfolio -->
 
-        <div id="portfolioMain">
+        <div id="portfolioMusic">
             <div class="portfolioMain">
                 <h1 class="sectionTitle"><span>Music</span> Work</h1>
                 <p class="contentTitles">Fight For <span>Asran</span></p>
@@ -150,16 +171,17 @@
                                 <img src="images/linkedin.png" class="linkedin">
                             </a>
                         </div>
-                        <a href="" download class="button">Download CV</a>
+                        <a href="other/FightForAsran_Main.wav" download class="button">Download CV</a>
                     </div>
                     <div class="contact-right">
-                        <form>
+                        <form name="submit-to-google-sheet">
                             <input type="text" name="Name" placeholder="Your Name" required>
                             <input type="email" name="Email" placeholder="Your Email" required>
-                            <input type="tel" name="PhoneNumber" placeholder="(999) 999-9999">
-                            <textarea type="text" rows="6" placeholder="Your Message"></textarea>
+                            <input type="tel" name="Phone" placeholder="(999) 999-9999" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
                             <button type="submit" class="button2">Submit</button>
                         </form>
+                        <span id="confirmation"></span>
                     </div>
                 </div>
             </div>
@@ -170,7 +192,27 @@
         <div class="copyright">
             <P>Copyright © Manoel McCadden</P>
         </div>
-
+    <script src="prism.js"></script>
     <script src="scripts.js"></script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzmRUixy1cXYwNnBz4NegkVFlVKUmKkKDVPShazmAJhmtUH4b-y7dMLIZpYlV-0DdaZGw/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("confirmation");
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => 
+            {
+                msg.innerHTML = "Your message has been sent!"
+                form.reset()
+                setTimeout(function()
+                {
+                    msg.innerHTML = ""
+                }, 5000)
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
     </body>
 </html>

@@ -37,13 +37,13 @@ nav
 nav.scroll
 {
     background: #231e25;
-    height: 140px;
+    height: 115px;
     z-index: 100;
 }
 
 .logo
 {
-    width: 140px;
+    width: 115px;
 }
 
 nav ul
@@ -95,7 +95,7 @@ nav ul li a:hover::after
 
 .header-text
 {
-    padding: 10px 6%;
+    padding: 10% 6%;
     padding-top: 350px;
     font-size: 40px;
 }
@@ -118,6 +118,7 @@ nav ul li a:hover::after
 
 #about
 {
+    scroll-margin-top: 50px;
     padding: 80px 0;
     background-color: #231e25;
     color: #fff;
@@ -196,6 +197,11 @@ nav ul li a:hover::after
     Programming Portfolio
 */
 
+#portfolioProgramming
+{
+    scroll-margin-top: 100px;
+}
+
 .portfolioMain
 {
     padding: 5% 6%; 
@@ -243,10 +249,47 @@ nav ul li a:hover::after
     padding: 0 10% 0 10px;
 }
 
+.codeDetails
+{
+    padding: 0 30px;
+}
+
+.codeDetails pre
+{
+    display: none;
+    max-height: 750px;
+    overflow: auto;
+    border: 1px solid #3f3941;
+}
+
+.button3
+{
+    font-size: 18px;
+    cursor: pointer;
+    display: block;
+    width: 600px;
+    border: 1px solid #231e25;
+    border-radius: 6px;
+    color: #fff;
+    padding: 14px 10%;
+    margin: 15px 0;
+    background-color: #a438c1;
+    transition: 0.25s;
+}
+
+.button3:hover
+{
+    background-color: #e1bb59;
+}
+
 /*
     Music Portfolio
 */
 
+#portfolioMusic
+{
+    scroll-margin-top: 100px;
+}
 
 /*
     Contact
@@ -383,23 +426,22 @@ form input, form textarea
     border-radius: 6px;
 }
 
-form .button2
+.button2
 {
     font-size: 18px;
     cursor: pointer;
     display: block;
-    margin-top: 40px;
     width: fit-content;
     border: 1px solid #231e25;
     border-radius: 6px;
     color: #fff;
     padding: 14px 10%;
-    margin: 15px 20px;
+    margin: 15px 15px;
     background-color: #a438c1;
     transition: 0.25s;
 }
 
-form .button2:hover
+.button2:hover
 {
     background-color: #e1bb59;
 }
@@ -413,6 +455,14 @@ form .button2:hover
     font-size: 20px;
     font-weight: 300;
     margin-top: 20px;
+}
+
+#confirmation
+{
+    color: #e1bb59;
+    font-size: 18px;
+    margin: 0px 15px;
+    display: block;
 }
 
 /*
