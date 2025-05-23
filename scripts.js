@@ -45,3 +45,28 @@ function toggleCode(id)
         code.style.display = 'none';
     }
 }
+
+document.addEventListener('DOMContentLoaded' , () =>
+{
+    const descriptions = ["Engineer", "Designer", "Programmer"];
+    let index = 0;
+
+    setInterval(() =>
+    {
+        const span = document.querySelector("#changingText span");
+        if (span)
+        {
+            span.style.transform = "translateY(10px)";
+            span.style.opacity = 0;
+
+            setTimeout(() =>
+            {
+                span.innerText = descriptions[index];
+                span.style.transform = "translateY(0)";
+                span.style.opacity = 1;
+            }, 500); // Spend 0.5 seconds sliding the text
+
+            index = (index + 1) % descriptions.length;
+        }
+    }, 1500); // Change text ever 1.5 seconds
+});
