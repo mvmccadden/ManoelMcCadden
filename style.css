@@ -66,7 +66,7 @@ nav
 */
 nav.scroll
 {
-    background: #231e25;
+    background: #322936;
     height: 115px;
     /*Set to z layer so high to ensure nothing is shown above it*/
     z-index: 100;
@@ -74,9 +74,16 @@ nav.scroll
 /*
     The logo in the top right
 */
-.logo
+#logo
 {
     width: 115px;
+}
+/*
+    Disable menu button for non mobile or small screens
+*/
+#menu
+{
+    display: none;
 }
 /*
     The nav selections as a whole group
@@ -133,8 +140,7 @@ nav ul li a:hover::after
 */
 .header-text
 {
-    padding: 10% 0;
-    padding-top: 350px;
+    padding-top: 30vh;
     font-size: 40px;
 }
 .header-text h1
@@ -145,6 +151,8 @@ nav ul li a:hover::after
 
 /*
     General, row, and column details
+
+    TODO: Fix Intro getting messed up with height resizing
 */
 
 .general
@@ -183,7 +191,7 @@ nav ul li a:hover::after
 
 #about
 {
-    scroll-margin-top: 75px;
+    scroll-margin-top: 70px;
     padding: 80px 0;
     color: #fff;
 }
@@ -251,7 +259,7 @@ nav ul li a:hover::after
 /* Defines where to position when nav bar locates */
 #portfolioProgramming
 {
-    scroll-margin-top: 80px;
+    scroll-margin-top: 60px;
     padding: 5% 0;
 }
 
@@ -480,9 +488,9 @@ form input, form textarea
 */
 
 /* 
-    TODO: Adjust the size of the header text
     TODO: Add menu button
     TODO: Adjust picture for smaller screens
+    TODO: Adjust socials (yt, git, linkedin) spacing on mobile
 
     TODO: IPad Air
     TODO: IPhone 12
@@ -490,6 +498,8 @@ form input, form textarea
 
     TODO: ADD APPROPRIATE CONTENT
 */
+
+
 
 /*
     Handles media settings for below 1600px
@@ -509,33 +519,53 @@ form input, form textarea
 */
 @media (max-width: 1300px) 
 {
+    /* Turn on the text in the nav bar */
+    .enableNav nav ul li a
+    {
+        display: block;
+    }
+    /* Hover effects for navbar */
+    .enableNavBk nav
+    {
+        align-content: flex-start;
+        border: 1px solid #e1bb59;
+        height: 100%;
+        z-index: 100; 
+    }
+    /* turn off display for logo and menu */
+    .disableDisplay
+    {
+        display: none;
+    }
+    /* turn on display for close */
+    .moveMenu
+    {
+        margin-bottom: 22%;
+    }
+    /* Enable menu button on smaller screens */
+    #menu
+    {
+        display: block;
+        cursor: pointer;
+        margin-right: 50px;
+        width: 75px;
+    }
+    /* Adjust header scroll for mobile */
+    #portfolioProgramming
+    {
+        scroll-margin-top: 110px;
+    }
+    #contact
+    {
+        scroll-margin-top: 110px;
+    }
     /* adjust the nav bar into a column flex */
     nav
     {
         justify-content: space-between;
-        transition: 0.2s;
-        width: 100vw;
-        height: 130px;
-    }
-    nav.scroll
-    {
         background: #322936;
-    }
-    nav:hover
-    {
-        justify-content: center;
-        background: #322936;
-        border: 2px solid #e1bb59;
-        height: 230px;
-    }    
-    nav:hover img
-    {
-        display: none;
-    }
-    nav:hover ul li a 
-    {
-        display: flex;
-        color: #ffffff;
+        height: 115px;
+        transition: 0.1s;
     }
     nav img
     {
@@ -544,26 +574,19 @@ form input, form textarea
     nav ul
     {
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
         justify-content: center;
-    }
-    nav ul li 
-    {
-        margin: 10px 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
     }
     nav ul li a
     {
         display: none;
         width: 100%;
+        font-size: 40px;
         text-align: center;
         justify-self: center;
-        align-self: center;
+        align-self: flex-start;
         position: normal;
-        color: #ffffff00;
+        color: #ffffff;
     }
 
     /* hand ing everything into a single row */
