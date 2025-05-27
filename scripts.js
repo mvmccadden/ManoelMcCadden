@@ -70,3 +70,33 @@ document.addEventListener('DOMContentLoaded' , () =>
         }
     }, 1500); // Change text ever 1.5 seconds
 });
+
+// Adjusts mobile menu based on clicks
+function AdjustMobileMenu() 
+{
+    let menuImg = document.getElementById("menu");
+
+    // Set new menu button
+    if(menuImg.src.includes("images/close.png"))
+    {
+        menuImg.src = "images/menu.png";
+    }
+    else
+    {
+        menuImg.src = "images/close.png";
+    }
+    // Move the menu button to the correct place
+    menuImg.classList.toggle("moveMenu")
+    // Turns off logo
+    document.getElementById("logo").classList.toggle("disableDisplay");
+    // Enable header text and background
+    document.getElementById("navBar").classList.toggle("enableNavBk");
+    document.getElementById("navBar").classList.toggle("enableNav");
+}
+
+// Click events for menu on mobile
+document.getElementById("menu").addEventListener("click", AdjustMobileMenu)
+document.querySelectorAll("nav ul li a").forEach(link => 
+{
+    link.addEventListener("click", AdjustMobileMenu);
+})
