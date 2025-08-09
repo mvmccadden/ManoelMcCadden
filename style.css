@@ -419,6 +419,9 @@ nav ul li a:hover::after
 {
     background-color: #e1bb59;
 }
+/*
+ *  Link Buttons
+ */
 button
 {
     display: block;
@@ -431,6 +434,31 @@ button
     background-color: #a438c1;
     transition: 0.25s;
 }
+.linkButton
+{
+    display: block;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    width: 560px;
+    color: #fff;
+    padding: 14px 50px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 18px;
+    line-height: 22px;
+    border: 1px solid #231e25;
+    border-radius: 6px;
+    background-color: #a438c1;
+    height: 51px;
+    transition: 0.25s;
+}
+.linkButton:hover
+{
+    background-color: #e1bb59;
+}
+/*
+ *  Normal buttons
+ */
 .button2
 {
     width: fit-content;
@@ -509,6 +537,10 @@ form input, form textarea
     {
         width: 95%;
     }
+    .linkButton
+    {
+        width: 95%;
+    }
     /* Adjust contact text size at middle screens */
 }
 
@@ -517,6 +549,10 @@ form input, form textarea
 */
 @media (max-width: 1300px) 
 {
+    #header
+    {
+        background-image: url(images/background_portrait.jpg);
+    }
     /* Turn on the text in the nav bar */
     .enableNav nav ul li a
     {
@@ -647,6 +683,11 @@ form input, form textarea
     .button3
     {
         width: 100%;
+    }
+    .linkButton
+    {
+        width: 90%;
+        margin: 0% 30px;
     }
 
     /* handles video placement */
