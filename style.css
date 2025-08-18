@@ -297,7 +297,7 @@ nav ul li a:hover::after
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: flex-start;
     height: 100%;
 }
 .contactInfo
@@ -494,6 +494,13 @@ form input, form textarea
     border-radius: 6px;
     resize: none;
 }
+
+#msg
+{
+    margin: 15px;
+    font-size: 18px;
+}
+
 
 /*
     Copyright info

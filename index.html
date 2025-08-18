@@ -436,13 +436,14 @@
                 <h1 class="sectionTitle">Contact <span>Me</span></h1>
                 <div class="row">
                     <div class="column1">
-                        <form>
+                        <form name='submit-to-google-sheet'>
                             <input type="text" name="Name" placeholder="Your Name" required>
                             <input type="email" name="Email" placeholder="Your Email" required>
                             <input type="tel" name="Phone" placeholder="(999) 999-9999" required>
                             <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
                             <button type="submit" class="button2">Submit</button>
                         </form>
+                        <span id="msg"></span>
                     </div>
                     <div class="column2">
                     <div class="centerItems">
@@ -484,7 +485,7 @@
     <script>
         const scriptURL = 'https://script.google.com/macros/s/AKfycbzmRUixy1cXYwNnBz4NegkVFlVKUmKkKDVPShazmAJhmtUH4b-y7dMLIZpYlV-0DdaZGw/exec'
         const form = document.forms['submit-to-google-sheet']
-        const msg = document.getElementById("confirmation");
+        const msg = document.getElementById("msg");
       
         form.addEventListener('submit', e => {
           e.preventDefault()
