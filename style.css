@@ -263,6 +263,9 @@ nav ul li a:hover::after
 
 .codeButtons
 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 0 30px;
 }
 .codeButtons pre

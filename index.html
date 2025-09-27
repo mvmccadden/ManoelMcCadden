@@ -210,7 +210,8 @@
                             <br>&nbsp&nbsp&nbsp - TrueType font support
                             <br>&nbsp&nbsp&nbsp - 2D Meshes and Textures
                             <br>
-                            <br>&nbsp - A custom FMOD based audio system
+                            <br>&nbsp - A custom FMOD based audio system (with
+                            code samples below!)
                             <br>&nbsp&nbsp&nbsp - Auto-ducking music to bring out SFX
                             <br>&nbsp&nbsp&nbsp - Seamless fading between themed-variations of tracks
                             <br>&nbsp&nbsp&nbsp - Lowpass filtering system on focus loss or menu activation
@@ -237,8 +238,29 @@
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
                         </iframe>
+                        <!---
+                          <a href="https://musescore.com/user/40012312/scores/13892938?share=copy_link"class="linkButton">
+                            Viewon Steam!
+                          </a>--->
                     </div>
                 </div> 
+                <div class="codeButtons">
+                    <button class="button3" onclick="toggleCode('code1')">
+                      Fmod Music Class and Data Struct</button>
+                    <pre id="code1"><code id="code1" class="language-cpp" style="display: none;"></code></pre>
+                    <button class="button3" onclick="toggleCode('code2')">
+                      Fmod Auto-Ducking 
+                    </button>
+                    <pre id="code2"><code id="code2" class="language-cpp" style="display: none;"></code></pre>
+                    <button class="button3" onclick="toggleCode('code3')">
+                      Fmod Track Toggling
+                    </button>
+                    <pre id="code3"><code id="code3" class="language-cpp" style="display: none;"></code></pre>
+                    <button class="button3" onclick="toggleCode('code4')">
+                      Fmod LPF and Beat Tracking
+                    </button>
+                    <pre id="code4"><code id="code4" class="language-cpp" style="display: none;"></code></pre>
+                </div>
 
                 <!--
 
@@ -279,32 +301,119 @@
                     <button class="button3" onclick="toggleCode('code6')">ClaPP_EntityManager.h</button>
                     <pre id="code6"><code id="code6" class="language-cpp" style="display: none;"></code></pre>
                 </div>
+
+                --->
+
                 <p class="contentTitles">Web<span>Synth</span></p>
                 <div class="row">
                     <div class="column1">
                         <p>
-                            A 2D procedurally generated priate themed
-                            rogue-like built in C/C++ on a 5 person team
-                            between Jan. - Apr. 2024 using a custom engine
-                            and the DigiPen Graphics Library.
+                            A browser-based polyphonic synthesizer
+                            using p5.js that features four distinct waveforms 
+                            and real-time visualization. While initially
+                            developed as a tool to help teach high school
+                            students the basics of programming, it evolved into 
+                            a personal project exploring audio synthesis 
+                            through visualization.
                             <br>
                             <br>
+                            Key Features:
+                            <br>&nbsp&nbsp - 4 selectable waveforms
+                            <br>&nbsp&nbsp - Polyphonic playback for chords and
+                            harmonies
+                            <br>&nbsp&nbsp - Interactive drag and drop GUI
+                            <br>&nbsp&nbsp - MIDI-style input using a standard
+                            computer keyboard
+                            <br>&nbsp&nbsp - Live visualization of frequency,
+                            amplitude, and MIDI note data
+                            <br>
+                            <br>
+                            A key technical challenge I faced during this
+                            project was attempting to mitigate the audible
+                            'clicks' from oscillators as they started and stopped
+                            While I implemented solutions such as amplitude
+                            ramping and ADSR envelopes, I found that the 
+                            key issue lay within the lack of granular control
+                            given through the p5 framework. Through this
+                            experience I have learned valuable information in
+                            synthesis visualization and look forward to
+                            re-implementing this through C++ and portaudio
+                            and/or juce in the future to gain greater control
+                            over the audio stream and produce seamless output. 
+                        <!-- 
+                          TOO MUCH DETAIL BUT GREAT FOR A PROJECT PAGE LATER
 
+
+                            A basic synth built using javascript's P5 framework
+                            and it's native audio functionality to play 4
+                            different wave patterns while visualizing the
+                            frequency and amplitude of each wave form on a
+                            graph.
+                            <br>
+                            <br>
+                            This project began as a testing ground for p5 while
+                            I learned it to help teach incoming high school
+                            students the basics of programming through a fun and
+                            interactive lens. Through my time researching and
+                            understanding p5 I dove into it's sound
+                            functionality and landed upon an example on their
+                            website detailing simple mouse position-based audio.
+                            From there I made it my goal to create a GUI that
+                            allowed users to experiment with p5's array of
+                            waveforms and explore visually the logrithimic nature
+                            of musical frequencies.
+                            <br>
+                            <br>
+                            Features Include:
+                            <br>&nbsp&nbsp - 4 Different playable wave forms
+                            <br>&nbsp&nbsp - Polyphonic through sustaining notes
+                            <br>&nbsp&nbsp - Drag and drop GUI
+                            <br>&nbsp&nbsp - Computer keyboard MIDI keybindings
+                            <br>&nbsp&nbsp - Frequency information and MIDI note
+                            value
+                            <br>
+                            <br>
+                            One of the major challenges I faced through this
+                            project was attempting to handle the click of
+                            starting and stoping p5's oscillators. I attempted
+                            to minimize the clicking by having the amplitude of
+                            the oscilator slowly ramp up to the desired
+                            amplitude on start and down to 0 on a stop and 
+                            using an ADSR envelope but found that neither solution 
+                            entirly fixed the problem (with them each creating new
+                            problesm of their own).
+                            <br>
+                            <br>
+                            Despite this challenge I am very happy with the end
+                            result and the potential this idea has to go even
+                            further. In order to accomplish more with this
+                            project I plan to migrate and continue my work in
+                            C++ using portaudio and GTK so that I can have more
+                            grainular control of the inner workings of the audio
+                            output and focus the implementation towards this
+                            projects specific need.
+                            --->
                         </p>
                     </div>
                     <div class="column2">
                         <iframe 
-                            width="560" height="315" 
-                            src="https://www.youtube.com/embed/5E86R-bN-SQ?si=SAi3jzWPebm1Hm33" 
-                            title="YouTube video player" frameborder="0" 
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                          width="560" height="315" 
+                          src="https://www.youtube.com/embed/f75r6wYghYg?si=58WUr5RxZZNCO-9R" 
+                          title="YouTube video player" frameborder="0" 
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
                         </iframe>
+                        <a href="https://mvmccadden.github.io/WebSynth/"class="linkButton">
+                          Try out the WebSynth!
+                        </a>
                     </div>
                 </div> 
-
-                --->
-
+                <div class="codeButtons">
+                    <button class="button3" onclick="toggleCode('codeWebSynthJs')">
+                      WebSynth Positional Freq/Amp
+                    </button>
+                    <pre id="codeWebSynthJs"><code id="codeWebSynthJs" class="language-js" style="display: none;"></code></pre>
+                </div>
                 <p class="contentTitles"><span>Rogue</span> Waters</p>
                 <div class="row">
                     <div class="column1">

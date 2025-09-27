@@ -25,12 +25,11 @@ async function fetchAndDisplayCode(file, elementId) {
 
 document.addEventListener('DOMContentLoaded', () => 
 {
-    fetchAndDisplayCode('code/CLAPP/ClaPP_ECSManager.cpp', 'code1');
-    fetchAndDisplayCode('code/CLAPP/ClaPP_ECSManager.h', 'code2');
-    fetchAndDisplayCode('code/CLAPP/ClaPP_SystemManager.cpp', 'code3');
-    fetchAndDisplayCode('code/CLAPP/ClaPP_SystemManager.h', 'code4');
-    fetchAndDisplayCode('code/CLAPP/ClaPP_ComponentManager.h', 'code5');
-    fetchAndDisplayCode('code/CLAPP/ClaPP_EntityManager.h', 'code6');
+    fetchAndDisplayCode('code/fmodMusicDataImplementation.cpp', 'code1');
+    fetchAndDisplayCode('code/fmodSideChainingImplementation.cpp', 'code2');
+    fetchAndDisplayCode('code/fmodBsideImplementation.cpp', 'code3');
+    fetchAndDisplayCode('code/fmodLPFandBeatTrackingImplementation.cpp', 'code4');
+    fetchAndDisplayCode('code/websynthWaveshape.js', 'codeWebSynthJs');
 });
 
 function toggleCode(id)
