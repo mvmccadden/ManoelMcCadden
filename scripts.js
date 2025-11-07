@@ -47,19 +47,28 @@ function toggleCode(id)
 
 document.addEventListener('DOMContentLoaded' , () =>
 {
-    const descriptions = ["Engineer", "Designer", "Programmer"];
+    const titles = ["Audio", "Technical"];
+    const descriptions = ["Programmer", "Sound Designer"]; 
     let index = 0;
 
     setInterval(() =>
     {
+        const title = document.querySelector("#changingTitle");
         const span = document.querySelector("#changingText span");
-        if (span)
-        {
+        if (title && span)
+        { 
+            title.style.transform = "translateY(-10px)";
+            title.style.opacity = 0;
+
             span.style.transform = "translateY(10px)";
             span.style.opacity = 0;
 
             setTimeout(() =>
             {
+                title.innerText = titles[index];
+                title.style.transform = "translateY(0)";
+                title.style.opacity = 1;
+
                 span.innerText = descriptions[index];
                 span.style.transform = "translateY(0)";
                 span.style.opacity = 1;
@@ -67,7 +76,7 @@ document.addEventListener('DOMContentLoaded' , () =>
 
             index = (index + 1) % descriptions.length;
         }
-    }, 1500); // Change text ever 1.5 seconds
+    }, 2000); // Change text ever 1.5 seconds
 });
 
 // Adjusts mobile menu based on clicks

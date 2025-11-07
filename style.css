@@ -38,6 +38,11 @@ body
 }
 
 /* Handles the changing text transition styling */
+#changingTitle
+{
+    display: inline-block;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
 #changingText span
 {
     display: inline-block;
