@@ -30,6 +30,7 @@ document.addEventListener('DOMContentLoaded', () =>
     fetchAndDisplayCode('code/fmodBsideImplementation.cpp', 'code3');
     fetchAndDisplayCode('code/fmodLPFandBeatTrackingImplementation.cpp', 'code4');
     fetchAndDisplayCode('code/websynthWaveshape.js', 'codeWebSynthJs');
+    fetchAndDisplayCode('code/arms_filterapply.cpp', 'codeARMSFilter');
 });
 
 function toggleCode(id)
