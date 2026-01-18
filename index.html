@@ -238,15 +238,15 @@
                 </div> 
 
                 <p
-                class="contentTitles"><span>Acoustic</span> Ray Modeling
-                <span>Simulation</span> (ARMS)</p>
+                class="contentTitles"><span>Acoustic Ray</span> Modeling
+                Simulation (<span>ARMS</span>)</p>
                 <div class="row">
                     <div class="column1">
                         <p>
-                            A simple physically modeled acoustic room simulation
+                            A physically modeled acoustic room simulation
                             that demonstrates how rooms attenutate sound based
-                            on different materials, microphone, and the
-                            direction output of speakers. 
+                            on different materials, microphone and speaker
+                            settings. 
                             <br>
                             <br>
                             Key Features:
@@ -254,14 +254,22 @@
                             processing samples to simulate them within given rooms
                             <br>&nbsp&nbsp - Physical ray modeled reverberance
                             <br>&nbsp&nbsp - Sabine Formula modeled reverberance
-                            <br>&nbsp&nbsp - Custom scripting system that allows
-                            the user to define different materials, speaker
-                            sources and microphone settings
                             <br>&nbsp&nbsp - Built using SFML to visualize rooms
                             and their physically modeled rays
+                            <br>
+                            <br>&nbsp&nbsp - Custom scripting system with
+                            features such as:
+                            <br>&nbsp&nbsp&nbsp&nbsp - Custom material creation
+                            <br>&nbsp&nbsp&nbsp&nbsp - Custom room generation
+                            <br>&nbsp&nbsp&nbsp&nbsp - Customizable microphone
+                            settings
+                            <br>&nbsp&nbsp&nbsp&nbsp - Customizable speaker 
+                            settings
                         </p>
                     </div>
                     <div class="column2">
+                        <img id="exampleImages" src="images/ARMS_Example.png" width="560" height="315">
+                    <!-- REPLACE/ADD YOUTUBE VIDEO LATER
                         <iframe 
                           width="560" height="315" 
                           src="https://www.youtube.com/embed/f75r6wYghYg?si=58WUr5RxZZNCO-9R" 
@@ -269,14 +277,15 @@
                           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                           referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
                         </iframe>
+                    -->
                         <a href="https://github.com/mvmccadden/ARMS/"class="linkButton">
                           Check out the simulation for yourself!
                         </a>
                     </div>
                 </div> 
                 <div class="codeButtons">
-                    <button class="button3" onclick="toggleCode('codeWebSynthJs')">
-                      WebSynth Positional Freq/Amp
+                    <button class="button3" onclick="toggleCode('codeARMSFilter')">
+                      ARMS Scene-Based DSP
                     </button>
                     <pre id="codeARMSFilter"><code id="codeARMSFilter" class="language-cpp" style="display: none;"></code></pre>
                 </div>

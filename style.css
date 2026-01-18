@@ -187,7 +187,9 @@ nav ul li a:hover::after
 .column2
 {
     flex-basis: 35%;
+    justify-content: center;
 }
+
 
 /*
     About Section 
@@ -552,6 +554,14 @@ form input, form textarea
     {
         width: 95%;
     }
+    #exampleImages
+    {
+        width: 95%
+    }
+    .codeButtons
+    {
+      max-width: 97.25%;
+    }
     .linkButton
     {
         width: 95%;
@@ -707,6 +717,13 @@ form input, form textarea
 
     /* handles video placement */
     iframe
+    {
+        width: 90%;
+        height: 100%;
+        aspect-ratio: 2/1;
+        margin: 0% 30px;
+    }
+    #exampleImages
     {
         width: 90%;
         height: 100%;
