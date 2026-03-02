@@ -10,9 +10,9 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE-edge">
         <meta name="viewport" content="width=device-width, inital-scale=1.0">
-        <title>Manoel McCadden's Portfolio</title>
+        <title>Manoel V. McCadden's Portfolio</title>
         <meta name="descriptions" 
-            content="Hello, I'm Manoel McCadden, and welcome to my portfolio website! Check out my CS or music projects, learn more about me, or find out how to contact me.">
+            content="Hello, I'm Manoel V. McCadden, and welcome to my portfolio website! Check out my CS or music projects, learn more about me, or find out how to contact me.">
         <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="prism.css">
@@ -26,11 +26,10 @@
                 <nav>
                     <img src="images/logo.png" id="logo">
                     <ul>
-                        <li><a href="#header">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#portfolioProgramming">CS Portfolio</a></li>
-                        <li><a href="#portfolioMusic">Music Portfolio</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="cs.html">CS Portfolio</a></li>
+                        <li><a href="music.html">Music Portfolio</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
                     </ul>
                     <img id="menu" src="images/menu.png">
                 </nav>
@@ -67,9 +66,10 @@
             <div class="general">
                 <div class="row">
                     <div class="column1">
-                        <h1 class="aboutTitle">About <span>Me</span></h1>
+                        <h1 class="centerTitle">About <span>Me</span></h1>
+                        <div class="aboutText">
                         <p>
-                            Hello, I'm <b>Manoel McCadden.</b>
+                            Hello, I'm <b>Manoel V. McCadden.</b>
                             <br>
                             <br>
                             I am an <b>Audio Programmer</b> and <b>Technical Sound Designer</b>
@@ -78,110 +78,92 @@
                             backgrounds.
                             <br>
                             <br>
-                            I am currently a junior at <b>DigiPen Institute of Technology</b>,
-                            pursuing my B.S. in Computer Science and
-                            Digital Audio. In my time at DigiPen 
+                            I am currently a <span><b>Junior</b></span> at <span><b>DigiPen
+                            Institute of Technology</b></span>,
+                            pursuing my <span><b>B.S. in Computer Science and
+                            Digital Audio</b></span>. In my time at DigiPen 
                             I have worked on and completed
-                            three game titles as the team's <b>Audio Programmer</b>,
+                            three game titles as the team's Audio Programmer,
                             where I utilized C and C++ to build custom systems,
-                            engines, and tools. Additionally, I am
-                            currently working on a fourth game title as the
-                            team's <b>Technical Sound Designer</b>, through which I 
+                            engines, and tools.
+                            <br>
+                            <br>
+                            Currently working on a fourth game title as the
+                            team's Technical Sound Designer, through which I 
                             develop custom systems and integration methods and
                             create unique audio assets for cinematics to assist with the
                             team's evolving needs.
                             <br>
                             <br>
                             Beyond my programming work, you can find me playing
-                            my Bari Sax with the <b>DigiPen Jazz Dragons</b>, 
+                            my Bari Sax with the DigiPen Jazz Dragons and
+                            DigiPen Big Band, 
                             providing live sound support for events, or working
                             in the campus recording studio.
                             <br>
                             <br>
-                            Check out my <b>independent projects and game titles
-                            below</b>, or contact me via email, phone, or LinkedIn!
+                            Check out my <b>projects and game titles
+                            below</b>, or contact me via email or LinkedIn!
                         </p>
+                        </div>
                     </div>
                     <div class="column2">
-                        <h1 class="infoNames">Education</h1>
-                        <div class="infoDetails">
-                            <ul>
-                                <li>
-                                    <span class="spanTitle">2023-2027</span class="spanTitle"><br>
-                                    <span = class="spanDetails">
-                                        DigiPen Institute of Technology - BSCSDA
-                                    </span class="spanDetails">
-                                </li>
-                                <li>
-                                    <span class="spanTitle">2022-2023</span class="spanTitle"><br>
-                                    <span class="spanDetails">
-                                        Bellevue College - Associates in Music
-                                    </span class="spanDetails">
-                                </li>
-                                <li>
-                                    <span class="spanTitle">2018-2022</span class="spanTitle"><br>
-                                    <span class="spanDetails">
-                                        Bothell High School - Diploma
-                                    </span class="spanDetails">
-                                </li>
-                            </ul>
-                        </div>    
-                        <h1 class="infoNames">Skills</h1>
+                      <h1 class="infoNames">My <span>Skills</span></h1>
                         <div class="infoDetails">
                             <ul>                        
                                 <li>
-                                    <span class="spanTitle">Programming Languages:</span class="spanTitle"><br>
-                                    <span = class="spanDetails">
+                                    <span class="spanTitle">Programming Languages:</span><br>
+                                    <span class="spanDetails">
                                         C/C++, Javascript
                                         <br>[Familiar with: Assembly, GLSL, R,
                                         C#, Java, Lua]
-                                    </span class="spanDetails"><br>
+                                    </span>
                                 </li>
                                 <li>
-                                    <span class="spanTitle">CS Topics:</span class="spanTitle"><br>
-                                    <span = class="spanDetails">
+                                    <span class="spanTitle">CS Topics:</span><br>
+                                    <span class="spanDetails">
                                         DSP, Real-Time Interactive Sound Synthesis, 
                                         Computational Acoustics, Memory
                                         Managment, Multithreading,
                                         Data Structures, Algorithms, 
                                         Operating Systems, Computer Architecture
-                                    </span class="spanDetails">
+                                    </span>
                                 </li>
                                 <li>
-                                    <span class="spanTitle">Libraries & APIs:</span class="spanTitle"><br>
-                                    <span = class="spanDetails">
+                                    <span class="spanTitle">Libraries & APIs:</span><br>
+                                    <span class="spanDetails">
                                         OpenGL, GLFW, GLM, Dear ImGUI, JSON for Modern C++
                                         <br>[Familiar with: Vulkan]
-                                    </span class="spanDetails">
+                                    </span>
                                 </li>
                                 <li>
-                                    <span class="spanTitle">Development Tools:</span class="spanTitle"><br>
-                                    <span = class="spanDetails">
+                                    <span class="spanTitle">Development Tools:</span><br>
+                                    <span class="spanDetails">
                                         Peforce, Git, Doxygen, Make, Visual
                                         Studio, NeoVim
-                                    </span class="spanDetails">
+                                    </span>
                                 </li>
                                 <li>
-                                    <span class="spanTitle">Development Practices:</span class="spanTitle"><br>
-                                    <span = class="spanDetails">
+                                    <span class="spanTitle">Development Practices:</span><br>
+                                    <span class="spanDetails">
                                         Code Reviews, Unit Testing, Debugging,
                                         Profiling, Code Documentation, Technical Writing
-                                    </span class="spanDetails">
+                                    </span>
                                 </li>
                                 <li>
-                                  <span class="spanTitle">Game & Audio Software</span class="spanTitle"><br>
-                                    <span = class="spanDetails">
+                                  <span class="spanTitle">Game & Audio Software</span><br>
+                                    <span class="spanDetails">
                                         Wwise, FMOD, Unreal Engine 5, C++ Custom
                                         Engine, Art & Audio Pipeline Development
-                                    </span class="spanDetails">
+                                    </span>
                                 </li>
                                 <li>
-                                    <span class="spanTitle">Audio Engineering:</span class="spanTitle"><br>
-                                    <span = class="spanDetails">
+                                    <span class="spanTitle">Audio Engineering:</span><br>
+                                    <span class="spanDetails">
                                         Mixing, Vocal and Instrument Recording,
                                         Live Event & Studio Setup/Teardown, 
                                         FL Studio, Ableton, Repear
-                                    </span class="spanDetails">
+                                    </span>
                                 </li>
                             </ul>
                         </div>
@@ -190,484 +172,48 @@
             </div>
         </div>
 
-<!-- Programming Portfolio -->
+<!-- Current Projects -->
 
-        <div id="portfolioProgramming">
-            <div class="general">
-                <h1 class="sectionTitle"><span>CS</span> Work</h1>
-                <p class="contentTitles"><span>Hyper</span>fist</p>
-                <div class="row">
-                    <div class="column1">
-                        <p>
-                            Hyperfist is a fast-paced, first-person, melee
-                            combat game all about delivering the most radical
-                            punch ever. After the deed to planet Earth was
-                            acquired by the robotic Khi Corporation in order to
-                            terraform the whole world into a huge planetary
-                            parking lot, you, Earth's local punk, decide to fight
-                            back against the capitalist corpo robots, so that
-                            you can punch them in their stupid robot faces.
-                            <br>
-                            <br>
-                            As the technical sound designer on Hyperfist, I
-                            primarily work on audio implementation, real-time
-                            interactive system development, audio feedback
-                            systems, and gameplay programming support.
-                            <br>
-                            <br>
-                            Some of my
-                            contributions include:
-                            <br>&nbsp - Beat-based hitstop synchronization 
-                            <br>&nbsp - Rhythmic environmental behaviors
-                            <br>&nbsp - Per-level dynamic ambience system 
-                            <br>&nbsp - Environmental triggers for player-induced sounds
-                            <br>&nbsp - Custom time-dilation system for enhanced
-                            player experience 
-                            <br>&nbsp - Cinematic sound design for cutscenes
-                            <br>
-                            <br>
-                        </p>
-                    </div>
-                    <div class="column2">
-                        <iframe 
-                          src="https://drive.google.com/file/d/1PHKFr82dAOfwwTgvAhDKl1mSONgCKyJC/preview" 
-                          width="560" height="315" allow="autoplay">
-                        </iframe>
-                        <a href="https://store.steampowered.com/app/3689210/HYPERFIST/" class="linkButton">Wishlist on Steam</a>
-                    </div>
-                </div> 
-
-                <p
-                class="contentTitles"><span>Acoustic Ray</span> Modeling
-                Simulation (<span>ARMS</span>)</p>
-                <div class="row">
-                    <div class="column1">
-                        <p>
-                            A physically modeled acoustic room simulation
-                            that demonstrates how rooms attenutate sound based
-                            on different materials, microphone and speaker
-                            settings. 
-                            <br>
-                            <br>
-                            Key Features:
-                            <br>&nbsp&nbsp - .wav file I/O for digitally
-                            processing samples to simulate them within given rooms
-                            <br>&nbsp&nbsp - Physical ray modeled reverberance
-                            <br>&nbsp&nbsp - Schroeder (Sabine Formula) modeled reverberance
-                            <br>&nbsp&nbsp - Built using SFML to visualize rooms
-                            and their physically modeled rays
-                            <br>
-                            <br>&nbsp&nbsp - Custom scripting system with
-                            features such as:
-                            <br>&nbsp&nbsp&nbsp&nbsp - Custom material creation
-                            <br>&nbsp&nbsp&nbsp&nbsp - Custom room generation
-                            <br>&nbsp&nbsp&nbsp&nbsp - Customizable microphone
-                            settings
-                            <br>&nbsp&nbsp&nbsp&nbsp - Customizable speaker 
-                            settings
-                        </p>
-                    </div>
-                    <div class="column2">
-                        <img id="exampleImages" src="images/ARMS_Example.png" width="560" height="315">
-                    <!-- REPLACE/ADD YOUTUBE VIDEO LATER
-                        <iframe 
-                          width="560" height="315" 
-                          src="https://www.youtube.com/embed/f75r6wYghYg?si=58WUr5RxZZNCO-9R" 
-                          title="YouTube video player" frameborder="0" 
-                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-                        </iframe>
-                    -->
-                        <a href="https://github.com/mvmccadden/ARMS/"class="linkButton">
-                          Check out the simulation for yourself!
-                        </a>
-                    </div>
-                </div> 
-                <div class="codeButtons">
-                    <button class="button3" onclick="toggleCode('codeARMSFilter')">
-                      ARMS Scene-Based DSP
-                    </button>
-                    <pre id="codeARMSFilter"><code id="codeARMSFilter" class="language-cpp" style="display: none;"></code></pre>
-                </div>
-
-                
-                <p class="contentTitles">Cretaceous<span> Clash</span></p>
-                <div class="row">
-                    <div class="column1">
-                        <p>
-                            A 2D robot-and-dinosaur-themed turn-based strategy 
-                            game built in C/C++ on a five-person team between September 2024 
-                            - April 2025 using our own custom engine.
-                            <br>
-                            <br>
-                            While this project has completed its lifecycle as a school assignment, 
-                            my team and I are currently refining and polishing it for a planned Steam 
-                            release in Summer 2026.
-                            <br>
-                            <br>
-                            Contributions:
-                            <br>&nbsp - A custom OpenGL/GLFW based graphics 
-                                system
-                            <br>&nbsp&nbsp&nbsp - Custom shaders
-                            <br>&nbsp&nbsp&nbsp - Batch rendering
-                            <br>&nbsp&nbsp&nbsp - Depth drawing
-                            <br>&nbsp&nbsp&nbsp - TrueType font support
-                            <br>&nbsp&nbsp&nbsp - 2D Meshes and Textures
-                            <br>
-                            <br>&nbsp - A custom FMOD based audio system (with
-                            code samples below!)
-                            <br>&nbsp&nbsp&nbsp - Auto-ducking music to bring out SFX
-                            <br>&nbsp&nbsp&nbsp - Seamless fading between themed-variations of tracks
-                            <br>&nbsp&nbsp&nbsp - Lowpass filtering system on focus loss or menu activation
-                            <br>&nbsp&nbsp&nbsp - Adaptive beat tracking
-                            <br>
-                            <br>&nbsp - Designed, recorded, and implemented SFX/Music
-                            <br>&nbsp - Level selection system to allow for 
-                                replayability
-                            <br>&nbsp - Used JSON through JSON For Modern C++ 
-                                to serialize all entities, components, and
-                                scenes
-                            <br>&nbsp - Led task management and tracking for
-                                the team
-                            <br>&nbsp - Wrote up a technical specification 
-                                providing a high overview of our engine and
-                                its systems
-                        </p>
-                    </div>
-                    <div class="column2">
-                        <iframe 
-                            width="560" height="315" 
-                            src="https://www.youtube.com/embed/Gm1vMGP0NTk?si=8yt6CYvpgogS9AYY" 
-                            title="YouTube video player" frameborder="0" 
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-                        </iframe>
-                        <!---
-                          <a href="https://musescore.com/user/40012312/scores/13892938?share=copy_link"class="linkButton">
-                            Viewon Steam!
-                          </a>--->
-                    </div>
-                </div> 
-                <div class="codeButtons">
-                    <button class="button3" onclick="toggleCode('code1')">
-                      Fmod Music Class and Data Struct</button>
-                    <pre id="code1"><code id="code1" class="language-cpp" style="display: none;"></code></pre>
-                    <button class="button3" onclick="toggleCode('code2')">
-                      Fmod Auto-Ducking 
-                    </button>
-                    <pre id="code2"><code id="code2" class="language-cpp" style="display: none;"></code></pre>
-                    <button class="button3" onclick="toggleCode('code3')">
-                      Fmod Track Toggling
-                    </button>
-                    <pre id="code3"><code id="code3" class="language-cpp" style="display: none;"></code></pre>
-                    <button class="button3" onclick="toggleCode('code4')">
-                      Fmod LPF and Beat Tracking
-                    </button>
-                    <pre id="code4"><code id="code4" class="language-cpp" style="display: none;"></code></pre>
-                </div>
-
-                <!--
-
-                <p class="contentTitles">Clairty<span>++</span></p>
-                <div class="row">
-                    <div class="column1">
-                        <p>
-                            A 2D procedurally generated priate themed
-                            rogue-like built in C/C++ on a 5 person team
-                            between Jan. - Apr. 2024 using a custom engine
-                            and the DigiPen Graphics Library.
-                            <br>
-                            <br>
-
-                        </p>
-                    </div>
-                    <div class="column2">
-                        <iframe 
-                            width="560" height="315" 
-                            src="https://www.youtube.com/embed/5E86R-bN-SQ?si=SAi3jzWPebm1Hm33" 
-                            title="YouTube video player" frameborder="0" 
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-                        </iframe>
-                    </div>
-                </div> 
-                <div class="codeButtons">
-                    <button class="button3" onclick="toggleCode('code1')">ClaPP_ECSManager.cpp</button>
-                    <pre id="code1"><code id="code1" class="language-cpp" style="display: none;"></code></pre>
-                    <button class="button3" onclick="toggleCode('code2')">ClaPP_ECSManager.h</button>
-                    <pre id="code2"><code id="code2" class="language-cpp" style="display: none;"></code></pre>
-                    <button class="button3" onclick="toggleCode('code3')">ClaPP_SystemManager.cpp</button>
-                    <pre id="code3"><code id="code3" class="language-cpp" style="display: none;"></code></pre>
-                    <button class="button3" onclick="toggleCode('code4')">ClaPP_SystemManager.h</button>
-                    <pre id="code4"><code id="code4" class="language-cpp" style="display: none;"></code></pre>
-                    <button class="button3" onclick="toggleCode('code5')">ClaPP_ComponentManager.h</button>
-                    <pre id="code5"><code id="code5" class="language-cpp" style="display: none;"></code></pre>
-                    <button class="button3" onclick="toggleCode('code6')">ClaPP_EntityManager.h</button>
-                    <pre id="code6"><code id="code6" class="language-cpp" style="display: none;"></code></pre>
-                </div>
-
-                --->
-
-                <p class="contentTitles">Web<span>Synth</span></p>
-                <div class="row">
-                    <div class="column1">
-                        <p>
-                            A browser-based polyphonic synthesizer
-                            using p5.js that features four distinct waveforms 
-                            and real-time visualization. While initially
-                            developed as a tool to help teach high school
-                            students the basics of programming, it evolved into 
-                            a personal project exploring audio synthesis 
-                            through visualization.
-                            <br>
-                            <br>
-                            Key Features:
-                            <br>&nbsp&nbsp - 4 selectable waveforms
-                            <br>&nbsp&nbsp - Polyphonic playback for chords and
-                            harmonies
-                            <br>&nbsp&nbsp - Interactive drag and drop GUI
-                            <br>&nbsp&nbsp - MIDI-style input using a standard
-                            computer keyboard
-                            <br>&nbsp&nbsp - Live visualization of frequency,
-                            amplitude, and MIDI note data
-                            <br>
-                            <br>
-                            A key technical challenge I faced during this
-                            project was attempting to mitigate the audible
-                            'clicks' from oscillators as they started and stopped
-                            While I implemented solutions such as amplitude
-                            ramping and ADSR envelopes, I found that the 
-                            key issue lay within the lack of granular control
-                            given through the p5 framework. Through this
-                            experience I have learned valuable information in
-                            synthesis visualization and look forward to
-                            re-implementing this through C++ and portaudio
-                            and/or juce in the future to gain greater control
-                            over the audio stream and produce seamless output. 
-                        <!-- 
-                          TOO MUCH DETAIL BUT GREAT FOR A PROJECT PAGE LATER
-
-
-                            A basic synth built using javascript's P5 framework
-                            and it's native audio functionality to play 4
-                            different wave patterns while visualizing the
-                            frequency and amplitude of each wave form on a
-                            graph.
-                            <br>
-                            <br>
-                            This project began as a testing ground for p5 while
-                            I learned it to help teach incoming high school
-                            students the basics of programming through a fun and
-                            interactive lens. Through my time researching and
-                            understanding p5 I dove into it's sound
-                            functionality and landed upon an example on their
-                            website detailing simple mouse position-based audio.
-                            From there I made it my goal to create a GUI that
-                            allowed users to experiment with p5's array of
-                            waveforms and explore visually the logrithimic nature
-                            of musical frequencies.
-                            <br>
-                            <br>
-                            Features Include:
-                            <br>&nbsp&nbsp - 4 Different playable wave forms
-                            <br>&nbsp&nbsp - Polyphonic through sustaining notes
-                            <br>&nbsp&nbsp - Drag and drop GUI
-                            <br>&nbsp&nbsp - Computer keyboard MIDI keybindings
-                            <br>&nbsp&nbsp - Frequency information and MIDI note
-                            value
-                            <br>
-                            <br>
-                            One of the major challenges I faced through this
-                            project was attempting to handle the click of
-                            starting and stoping p5's oscillators. I attempted
-                            to minimize the clicking by having the amplitude of
-                            the oscilator slowly ramp up to the desired
-                            amplitude on start and down to 0 on a stop and 
-                            using an ADSR envelope but found that neither solution 
-                            entirly fixed the problem (with them each creating new
-                            problesm of their own).
-                            <br>
-                            <br>
-                            Despite this challenge I am very happy with the end
-                            result and the potential this idea has to go even
-                            further. In order to accomplish more with this
-                            project I plan to migrate and continue my work in
-                            C++ using portaudio and GTK so that I can have more
-                            grainular control of the inner workings of the audio
-                            output and focus the implementation towards this
-                            projects specific need.
-                            --->
-                        </p>
-                    </div>
-                    <div class="column2">
-                        <iframe 
-                          width="560" height="315" 
-                          src="https://www.youtube.com/embed/f75r6wYghYg?si=58WUr5RxZZNCO-9R" 
-                          title="YouTube video player" frameborder="0" 
-                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-                        </iframe>
-                        <a href="https://mvmccadden.github.io/WebSynth/"class="linkButton">
-                          Try out the WebSynth!
-                        </a>
-                    </div>
-                </div> 
-                <div class="codeButtons">
-                    <button class="button3" onclick="toggleCode('codeWebSynthJs')">
-                      WebSynth Positional Freq/Amp
-                    </button>
-                    <pre id="codeWebSynthJs"><code id="codeWebSynthJs" class="language-js" style="display: none;"></code></pre>
-                </div>
-                <p class="contentTitles"><span>Rogue</span> Waters</p>
-                <div class="row">
-                    <div class="column1">
-                        <p>
-                            A 2D procedurally generated pirate-themed
-                            rogue-like built in C/C++ on a three-person team
-                            between January - May 2024 using our own custom engine
-                            and the DigiPen Graphics Library.
-                            <br>
-                            <br>
-                            Contributions:
-                            <br>&nbsp - Grid-based level generation where the values of each index corresponded to a tile type
-                            <br>&nbsp - Procedural level generation with focus on ensuring all enemies were accessible by the player
-                            <br>&nbsp - Collision between player and level objects based on tile types
-                            <br>&nbsp - Player controller, stats and behaviors
-                            <br>&nbsp - UI to indicate health and level time remaining
-                            <br>&nbsp - Health system that gave player health back based on if all enemies were killed
-                            <br>&nbsp - Combat system between player and enemies
-                            <br>&nbsp - Three enemy types with different stats to add variety to gameplay and levels
-                            <br>&nbsp - SFX/Music design and implementation
-                        </p>
-                    </div>
-                    <div class="column2">
-                        <iframe 
-                            width="560" height="315" 
-                            src="https://www.youtube.com/embed/WHKU3hS4X0U?si=SX624M8IjhjROx47" 
-                            title="YouTube video player" frameborder="0" 
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-                        </iframe>
-                    </div>
-                </div> 
-                <p class="contentTitles">Nome<span>ntum</span></p>
-                <div class="row">
-                    <div class="column1">
-                        <p>
-                            A 2D momentum-based platformer built in C on a 
-                            three-person team between October - December 2023 using
-                            DigiPen's own C Processing framework.
-                            <br>
-                            <br>
-                            Contributions: 
-                            <br>&nbsp - Tile-based level builder
-                            <br>&nbsp - Physics and collision system to handle 
-                                complex platforming mechanics
-                            <br>&nbsp - Debug drawing for all interactable objects
-                            <br>&nbsp - Enviornmental interactions such as doors, 
-                                levers, spikes, slimes, and level clear flags
-                            <br>&nbsp - A timer system for keeping track of the length
-                                of each session to encourage replayability
-                            <br>&nbsp - Final boss level map, gameplay, 
-                                and boss behavior
-                            <br>&nbsp - SFX/Music design and implementation
-                        </p>
-                    </div>
-                    <div class="column2">
-                        <iframe 
-                            width="560" height="315" 
-                            src="https://www.youtube.com/embed/5E86R-bN-SQ?si=SAi3jzWPebm1Hm33" 
-                            title="YouTube video player" frameborder="0" 
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-                        </iframe>
-                    </div>
-                </div> 
+     <div id="currentProjects">
+         <div class="general">
+             <h1 class="centerTitle"><span>Current</span> Projects</h1>
+             <hr>
+             <p class="contentTitles"><span>Hyper</span>fist</p>
+                 <div class="brief">
+                             I am the <span><b>Technical Sound Designer</b></span> 
+                             on Hyperfist. A fast-paced, first-person, melee
+                             combat game all about delivering the most radical
+                             punch ever. After the deed to planet Earth was
+                             acquired by the robotic Khi Corporation in order to
+                             terraform the whole world into a huge planetary
+                             parking lot, you, Earth's local punk, decide to fight
+                             back against the capitalist corpo robots, so that
+                             you can punch them in their stupid robot faces.
+                 </div>
+                 <div class="rowCenter">
+                     <div class="column2">
+                         <iframe 
+                           src="https://drive.google.com/file/d/1PHKFr82dAOfwwTgvAhDKl1mSONgCKyJC/preview" 
+                           width="560" height="315" allow="autoplay">
+                         </iframe>
+                         <a href="https://store.steampowered.com/app/3689210/HYPERFIST/" class="linkButton">Wishlist on Steam</a>
+                     </div>
+                 </div>
             </div>
         </div>
 
-<!-- Music Portfolio -->
-
-        <!--- TODO: Would be nice to add more info about arrangment process, tools used, ect... -->
-
-        <div id="portfolioMusic">
-            <div class="general">
-                <h1 class="sectionTitle"><span>Music</span> Work</h1>
-                <p class="contentTitles">Fight For <span>Asran</span></p>
-                <div class="row">
-                    <div class="column1">
-                        <p>
-                            My newest piece for DigiPen's Jazz Dragons arranged throughout late 2024 and into early 2025.
-                            First debuted by the Jazz Dragons in late April of the same year.
-                            Originally called <i>Oil Field Base</i> and done as an arrangement of the level of the same name, 
-                            this piece turned into a suite with custom transitions to showcase some of my favorite songs 
-                            and moments from the SNES classic <i>U.N. Squadron</i>. All music transcribed and arranged was 
-                            composed by Manami Matsumae and helps to convey the journey as you fight for the mighty
-                            country of Asran.
-                        </p>
-                    </div>
-                    <div class="column2">
-                        <iframe 
-                            width="560" height="315" 
-                            src="https://www.youtube.com/embed/rk4gtOu_ciA?si=vdpJdIsKvKST4Ghu"
-                            title="YouTube video player" frameborder="0" 
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-                        </iframe>
-                        <a href="https://musescore.com/user/40012312/scores/21072727/s/5RSGGl?share=copy_link" class="linkButton">View Sheet Music</a>
-                    </div>
-                </div> 
-                <p class="contentTitles"><span>Driftveil</span> City</p>
-                <div class="row">
-                    <div class="column1">
-                        <p>
-                            This piece was arranged in June of 2024 and brought to
-                            DigiPen's Jazz Dragons in September of the same year,
-                            where we performed it for the first time that December. 
-                            <i>Driftveil City</i> comes from <i>Pokemon Black and White</i> and 
-                            was composed by Hitomi Sato featuring an iconic melody, 
-                            deep groovy bassline, and some perfect jazzy chords for 
-                            a 12-piece jazz ensemble.
-                        </p>
-                    </div>
-                    <div class="column2">
-                        <iframe width="560" height="315" 
-                            src="https://www.youtube.com/embed/pr9XvBPXkc0?si=nkje9yAZuADmTuOV" 
-                            title="YouTube video player" frameborder="0" 
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-                        </iframe>
-                        <a href="https://musescore.com/user/40012312/scores/13892938?share=copy_link" class="linkButton">View Sheet Music</a>
-                    </div>
-            </div>
-        </div>
 
 <!-- Contact -->
 
         <div id="contact">
             <div class="general">
-                <h1 class="sectionTitle">Contact <span>Me</span></h1>
-                <div class="row">
-                    <div class="column1">
-                        <form name='submit-to-google-sheet'>
-                            <input type="text" name="Name" placeholder="Your Name" required>
-                            <input type="email" name="Email" placeholder="Your Email" required>
-                            <input type="tel" name="Phone" placeholder="(999) 999-9999" required>
-                            <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
-                            <button type="submit" class="button2">Submit</button>
-                        </form>
-                        <span id="msg"></span>
-                    </div>
-                    <div class="column2">
+                 <hr>
+                <h1 class="centerTitle">Contact <span>Me</span></h1>
                     <div class="centerItems">
                         <div class="contactInfo">
                             <div class ="mainContact">
                                 <img src="images/mail.png" class="emailIcon">
                                 <p>manoelvmccadden@gmail.com</p>
-                            </div>
-                            <div class="mainContact">
-                                <img src="images/phone.png" class="phoneIcon">
-                                <p>(425) 471-9223</p>
                             </div>
                         </div>
                         <div class="socials">
@@ -682,8 +228,6 @@
                             </a>
                         </div>
                         <a href="other/ManoelVMcCadden_Resume.pdf" download class="button">Download Resume</a>
-                    </div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -691,7 +235,7 @@
 <!-- Copyright -->
 
         <div class="copyright">
-            <P>Manoel McCadden © 2025</P>
+            <P>Manoel McCadden © 2025 - 2026</P>
         </div>
     <script src="prism.js"></script>
     <script src="scripts.js"></script>
@@ -717,3 +261,4 @@
       </script>
     </body>
 </html>
+

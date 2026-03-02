@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, inital-scale=1.0">
+        <title>Manoel V. McCadden's CS Portfolio</title>
+        <meta name="descriptions" 
+            content="Manoel V. McCaddens">
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="prism.css">
+    </head>
+
+<!-- Navbar and logo -->
+
+    <body>
+        <div id="headerNoImg">
+            <div id="navBar">
+                <nav>
+                    <!-- 
+                      TODO: Need to change image and navs as I add subsites 
+                      
+                    -->
+                    <img src="images/logo.png" id="logo">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="cs.html">CS Portfolio</a></li>
+                        <li><a href="music.html">Music Portfolio</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                    <img id="menu" src="images/menu.png">
+                </nav>
+            </div>
+        </div>
+
+<!-- Programming Portfolio -->
+
+        <div id="portfolioProgramming">
+            <div class="general">
+                <h1 class="centerTitle"><span>CS</span> Work</h1>
+                <hr>
+                <p class="contentTitles"><span>Hyper</span>fist</p>
+                <div class="row">
+                    <div class="column1">
+                        <p>
+                            Hyperfist is a fast-paced, first-person, melee
+                            combat game all about delivering the most radical
+                            punch ever. After the deed to planet Earth was
+                            acquired by the robotic Khi Corporation in order to
+                            terraform the whole world into a huge planetary
+                            parking lot, you, Earth's local punk, decide to fight
+                            back against the capitalist corpo robots, so that
+                            you can punch them in their stupid robot faces.
+                            <br>
+                            <br>
+                            As the <span><b>Technical Sound Designer</b></span> on Hyperfist, I
+                            primarily work on audio implementation, real-time
+                            interactive system development, audio feedback
+                            systems, and gameplay programming support.
+                            <br>
+                            <br>
+                            <span><b>Contributions include:</b></span>
+                            <br>&nbsp&nbsp - Beat-based hitstop synchronization 
+                            <br>&nbsp&nbsp - Rhythmic environmental behaviors
+                            <br>&nbsp&nbsp - Per-level dynamic ambience system 
+                            <br>&nbsp&nbsp - Environmental triggers for player-induced sounds
+                            <br>&nbsp&nbsp - Custom time-dilation system for enhanced
+                            player experience 
+                            <br>&nbsp&nbsp - Cinematic sound design for cutscenes
+                            <br>
+                            <br>
+                        </p>
+                    </div>
+                    <div class="column2">
+                        <iframe 
+                          src="https://drive.google.com/file/d/1PHKFr82dAOfwwTgvAhDKl1mSONgCKyJC/preview" 
+                          width="560" height="315" allow="autoplay">
+                        </iframe>
+                        <a href="https://store.steampowered.com/app/3689210/HYPERFIST/" class="linkButton">Wishlist on Steam</a>
+                    </div>
+                </div> 
+                <hr>
+                <p class="contentTitles"><span>Acoustic Ray</span> Modeling
+                Simulation <span>(ARMS)</span></p>
+                <div class="row">
+                    <div class="column1">
+                        <p>
+                            A physically modeled acoustic room simulation
+                            that demonstrates how rooms attenutate sound based
+                            on different materials, microphone and speaker
+                            settings. 
+                            <br>
+                            <br>
+                            <span><b>Key features:</b></span>
+                            <br>&nbsp&nbsp - .wav file I/O for digitally
+                            processing samples to simulate them within given rooms
+                            <br>&nbsp&nbsp - Physical ray modeled reverberance
+                            <br>&nbsp&nbsp - Schroeder (Sabine Formula) modeled reverberance
+                            <br>&nbsp&nbsp - Built using SFML to visualize rooms
+                            and their physically modeled rays
+                            <br>
+                            <br>&nbsp&nbsp - Custom scripting system with
+                            features such as:
+                            <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp - Custom material creation
+                            <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp - Custom room generation
+                            <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp - Customizable microphone
+                            settings
+                            <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp - Customizable speaker 
+                            settings
+                        </p>
+                    </div>
+                    <div class="column2">
+                        <img id="exampleImages" src="images/ARMS_Example.png" width="560" height="315">
+                    <!-- REPLACE/ADD YOUTUBE VIDEO LATER
+                        <iframe 
+                          width="560" height="315" 
+                          src="https://www.youtube.com/embed/f75r6wYghYg?si=58WUr5RxZZNCO-9R" 
+                          title="YouTube video player" frameborder="0" 
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                        </iframe>
+                    -->
+                        <a href="https://github.com/mvmccadden/ARMS/"class="linkButton">
+                          Check out the simulation for yourself!
+                        </a>
+                    </div>
+                </div> 
+                <div class="codeButtons">
+                    <button class="button3" onclick="toggleCode('codeARMSFilter')">
+                      ARMS Scene-Based DSP
+                    </button>
+                    <pre id="codeARMSFilter"><code id="codeARMSFilter" class="language-cpp" style="display: none;"></code></pre>
+                </div>
+                <hr>
+                <p class="contentTitles">Cretaceous<span> Clash</span></p>
+                <div class="row">
+                    <div class="column1">
+                        <p>
+                            A 2D robot-and-dinosaur-themed turn-based strategy 
+                            game built in C/C++ on a five-person team between September 2024 
+                            - April 2025 using our own custom engine.
+                            <br>
+                            <br>
+                            While this project has completed its lifecycle as a school assignment, 
+                            my team and I are currently refining and polishing it for a planned Steam 
+                            release in Summer 2026.
+                            <br>
+                            <br>
+                            <span><b>Contributions include:</b></span>
+                            <br>&nbsp&nbsp - A custom OpenGL/GLFW based graphics 
+                                system
+                            <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp - Custom shaders
+                            <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp - Batch rendering
+                            <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp - Depth drawing
+                            <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp - TrueType font support
+                            <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp - 2D Meshes and Textures
+                            <br>
+                            <br>&nbsp&nbsp - A custom FMOD based audio system (with
+                            code samples below!)
+                            <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp - Auto-ducking music to bring out SFX
+                            <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp - Seamless fading between themed-variations of tracks
+                            <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp - Lowpass filtering system on focus loss or menu activation
+                            <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp - Adaptive beat tracking
+                            <br>
+                            <br>&nbsp&nbsp - Designed, recorded, and implemented SFX/Music
+                            <br>&nbsp&nbsp - Level selection system to allow for 
+                                replayability
+                            <br>&nbsp&nbsp - Used JSON through JSON For Modern C++ 
+                                to serialize all entities, components, and
+                                scenes
+                            <br>&nbsp&nbsp - Led task management and tracking for
+                                the team
+                            <br>&nbsp&nbsp - Wrote up a technical specification 
+                                providing a high overview of our engine and
+                                its systems
+                        </p>
+                    </div>
+                    <div class="column2">
+                        <iframe 
+                            width="560" height="315" 
+                            src="https://www.youtube.com/embed/Gm1vMGP0NTk?si=8yt6CYvpgogS9AYY" 
+                            title="YouTube video player" frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                        </iframe>
+                        <!---
+                          <a href="https://musescore.com/user/40012312/scores/13892938?share=copy_link"class="linkButton">
+                            Viewon Steam!
+                          </a>--->
+                    </div>
+                </div> 
+                <div class="codeButtons">
+                    <button class="button3" onclick="toggleCode('code1')">
+                      Fmod Music Class and Data Struct</button>
+                    <pre id="code1"><code id="code1" class="language-cpp" style="display: none;"></code></pre>
+                    <button class="button3" onclick="toggleCode('code2')">
+                      Fmod Auto-Ducking 
+                    </button>
+                    <pre id="code2"><code id="code2" class="language-cpp" style="display: none;"></code></pre>
+                    <button class="button3" onclick="toggleCode('code3')">
+                      Fmod Track Toggling
+                    </button>
+                    <pre id="code3"><code id="code3" class="language-cpp" style="display: none;"></code></pre>
+                    <button class="button3" onclick="toggleCode('code4')">
+                      Fmod LPF and Beat Tracking
+                    </button>
+                    <pre id="code4"><code id="code4" class="language-cpp" style="display: none;"></code></pre>
+                </div>
+
+                <!--
+
+                <p class="contentTitles">Clairty<span>++</span></p>
+                <div class="row">
+                    <div class="column1">
+                        <p>
+                            A 2D procedurally generated priate themed
+                            rogue-like built in C/C++ on a 5 person team
+                            between Jan. - Apr. 2024 using a custom engine
+                            and the DigiPen Graphics Library.
+                            <br>
+                            <br>
+
+                        </p>
+                    </div>
+                    <div class="column2">
+                        <iframe 
+                            width="560" height="315" 
+                            src="https://www.youtube.com/embed/5E86R-bN-SQ?si=SAi3jzWPebm1Hm33" 
+                            title="YouTube video player" frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                        </iframe>
+                    </div>
+                </div> 
+                <div class="codeButtons">
+                    <button class="button3" onclick="toggleCode('code1')">ClaPP_ECSManager.cpp</button>
+                    <pre id="code1"><code id="code1" class="language-cpp" style="display: none;"></code></pre>
+                    <button class="button3" onclick="toggleCode('code2')">ClaPP_ECSManager.h</button>
+                    <pre id="code2"><code id="code2" class="language-cpp" style="display: none;"></code></pre>
+                    <button class="button3" onclick="toggleCode('code3')">ClaPP_SystemManager.cpp</button>
+                    <pre id="code3"><code id="code3" class="language-cpp" style="display: none;"></code></pre>
+                    <button class="button3" onclick="toggleCode('code4')">ClaPP_SystemManager.h</button>
+                    <pre id="code4"><code id="code4" class="language-cpp" style="display: none;"></code></pre>
+                    <button class="button3" onclick="toggleCode('code5')">ClaPP_ComponentManager.h</button>
+                    <pre id="code5"><code id="code5" class="language-cpp" style="display: none;"></code></pre>
+                    <button class="button3" onclick="toggleCode('code6')">ClaPP_EntityManager.h</button>
+                    <pre id="code6"><code id="code6" class="language-cpp" style="display: none;"></code></pre>
+                </div>
+
+                --->
+
+                <hr>
+                <p class="contentTitles">Web<span>Synth</span></p>
+                <div class="row">
+                    <div class="column1">
+                        <p>
+                            A browser-based polyphonic synthesizer
+                            using p5.js that features four distinct waveforms 
+                            and real-time visualization. While initially
+                            developed as a tool to help teach high school
+                            students the basics of programming, it evolved into 
+                            a personal project exploring audio synthesis 
+                            through visualization.
+                            <br>
+                            <br>
+                            <span><b>Key features:</b></span>
+                            <br>&nbsp&nbsp - 4 selectable waveforms
+                            <br>&nbsp&nbsp - Polyphonic playback for chords and
+                            harmonies
+                            <br>&nbsp&nbsp - Interactive drag and drop GUI
+                            <br>&nbsp&nbsp - MIDI-style input using a standard
+                            computer keyboard
+                            <br>&nbsp&nbsp - Live visualization of frequency,
+                            amplitude, and MIDI note data
+                            <br>
+                            <br>
+                            A key technical challenge I faced during this
+                            project was attempting to mitigate the audible
+                            'clicks' from oscillators as they started and stopped
+                            While I implemented solutions such as amplitude
+                            ramping and ADSR envelopes, I found that the 
+                            key issue lay within the lack of granular control
+                            given through the p5 framework. Through this
+                            experience I have learned valuable information in
+                            synthesis visualization and look forward to
+                            re-implementing this through C++ and portaudio
+                            and/or juce in the future to gain greater control
+                            over the audio stream and produce seamless output. 
+                        <!-- 
+                          TOO MUCH DETAIL BUT GREAT FOR A PROJECT PAGE LATER
+
+
+                            A basic synth built using javascript's P5 framework
+                            and it's native audio functionality to play 4
+                            different wave patterns while visualizing the
+                            frequency and amplitude of each wave form on a
+                            graph.
+                            <br>
+                            <br>
+                            This project began as a testing ground for p5 while
+                            I learned it to help teach incoming high school
+                            students the basics of programming through a fun and
+                            interactive lens. Through my time researching and
+                            understanding p5 I dove into it's sound
+                            functionality and landed upon an example on their
+                            website detailing simple mouse position-based audio.
+                            From there I made it my goal to create a GUI that
+                            allowed users to experiment with p5's array of
+                            waveforms and explore visually the logrithimic nature
+                            of musical frequencies.
+                            <br>
+                            <br>
+                            Features Include:
+                            <br>&nbsp&nbsp - 4 Different playable wave forms
+                            <br>&nbsp&nbsp - Polyphonic through sustaining notes
+                            <br>&nbsp&nbsp - Drag and drop GUI
+                            <br>&nbsp&nbsp - Computer keyboard MIDI keybindings
+                            <br>&nbsp&nbsp - Frequency information and MIDI note
+                            value
+                            <br>
+                            <br>
+                            One of the major challenges I faced through this
+                            project was attempting to handle the click of
+                            starting and stoping p5's oscillators. I attempted
+                            to minimize the clicking by having the amplitude of
+                            the oscilator slowly ramp up to the desired
+                            amplitude on start and down to 0 on a stop and 
+                            using an ADSR envelope but found that neither solution 
+                            entirly fixed the problem (with them each creating new
+                            problesm of their own).
+                            <br>
+                            <br>
+                            Despite this challenge I am very happy with the end
+                            result and the potential this idea has to go even
+                            further. In order to accomplish more with this
+                            project I plan to migrate and continue my work in
+                            C++ using portaudio and GTK so that I can have more
+                            grainular control of the inner workings of the audio
+                            output and focus the implementation towards this
+                            projects specific need.
+                            --->
+                        </p>
+                    </div>
+                    <div class="column2">
+                        <iframe 
+                          width="560" height="315" 
+                          src="https://www.youtube.com/embed/f75r6wYghYg?si=58WUr5RxZZNCO-9R" 
+                          title="YouTube video player" frameborder="0" 
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                        </iframe>
+                        <a href="https://mvmccadden.github.io/WebSynth/"class="linkButton">
+                          Try out the WebSynth!
+                        </a>
+                    </div>
+                </div> 
+                <div class="codeButtons">
+                    <button class="button3" onclick="toggleCode('codeWebSynthJs')">
+                      WebSynth Positional Freq/Amp
+                    </button>
+                    <pre id="codeWebSynthJs"><code id="codeWebSynthJs" class="language-js" style="display: none;"></code></pre>
+                </div>
+                <hr>
+                <p class="contentTitles"><span>Rogue</span> Waters</p>
+                <div class="row">
+                    <div class="column1">
+                        <p>
+                            A 2D procedurally generated pirate-themed
+                            rogue-like built in C/C++ on a three-person team
+                            between January - May 2024 using our own custom engine
+                            and the DigiPen Graphics Library.
+                            <br>
+                            <br>
+                            <span><b>Contributions include:</b></span>
+                            <br>&nbsp&nbsp - Grid-based level generation where the values of each index corresponded to a tile type
+                            <br>&nbsp&nbsp - Procedural level generation with focus on ensuring all enemies were accessible by the player
+                            <br>&nbsp&nbsp - Collision between player and level objects based on tile types
+                            <br>&nbsp&nbsp - Player controller, stats and behaviors
+                            <br>&nbsp&nbsp - UI to indicate health and level time remaining
+                            <br>&nbsp&nbsp - Health system that gave player health back based on if all enemies were killed
+                            <br>&nbsp&nbsp - Combat system between player and enemies
+                            <br>&nbsp&nbsp - Three enemy types with different stats to add variety to gameplay and levels
+                            <br>&nbsp&nbsp - SFX/Music design and implementation
+                        </p>
+                    </div>
+                    <div class="column2">
+                        <iframe 
+                            width="560" height="315" 
+                            src="https://www.youtube.com/embed/WHKU3hS4X0U?si=SX624M8IjhjROx47" 
+                            title="YouTube video player" frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                        </iframe>
+                    </div>
+                </div> 
+                <hr>
+                <p class="contentTitles">Nome<span>ntum</span></p>
+                <div class="row">
+                    <div class="column1">
+                        <p>
+                            A 2D momentum-based platformer built in C on a 
+                            three-person team between October - December 2023 using
+                            DigiPen's own C Processing framework.
+                            <br>
+                            <br>
+                            <span><b>Contributions include:</b></span>
+                            <br>&nbsp&nbsp - Tile-based level builder
+                            <br>&nbsp&nbsp - Physics and collision system to handle 
+                                complex platforming mechanics
+                            <br>&nbsp&nbsp - Debug drawing for all interactable objects
+                            <br>&nbsp&nbsp - Enviornmental interactions such as doors, 
+                                levers, spikes, slimes, and level clear flags
+                            <br>&nbsp&nbsp - A timer system for keeping track of the length
+                                of each session to encourage replayability
+                            <br>&nbsp&nbsp - Final boss level map, gameplay, 
+                                and boss behavior
+                            <br>&nbsp&nbsp - SFX/Music design and implementation
+                        </p>
+                    </div>
+                    <div class="column2">
+                        <iframe 
+                            width="560" height="315" 
+                            src="https://www.youtube.com/embed/5E86R-bN-SQ?si=SAi3jzWPebm1Hm33" 
+                            title="YouTube video player" frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                        </iframe>
+                    </div>
+                </div> 
+            </div>
+        </div>
+
+
+<!-- Copyright -->
+
+        <div class="copyright">
+            <P>Manoel McCadden © 2025 - 2026</P>
+        </div>
+    <script src="prism.js"></script>
+    <script src="scripts.js"></script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzmRUixy1cXYwNnBz4NegkVFlVKUmKkKDVPShazmAJhmtUH4b-y7dMLIZpYlV-0DdaZGw/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg");
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => 
+            {
+                msg.innerHTML = "Your message has been sent!"
+                form.reset()
+                setTimeout(function()
+                {
+                    msg.innerHTML = ""
+                }, 5000)
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+    </body>
+</html>

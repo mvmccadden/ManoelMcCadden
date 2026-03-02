@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, inital-scale=1.0">
+        <title>Manoel V. McCadden's CS Portfolio</title>
+        <meta name="descriptions" 
+            content="Manoel V. McCaddens">
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="prism.css">
+    </head>
+
+<!-- Navbar and logo -->
+
+    <body>
+        <div id="headerNoImg">
+            <div id="navBar">
+                <nav>
+                    <!-- 
+                      TODO: Need to change image and navs as I add subsites 
+                      
+                    -->
+                    <img src="images/logo.png" id="logo">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="cs.html">CS Portfolio</a></li>
+                        <li><a href="music.html">Music Portfolio</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                    <img id="menu" src="images/menu.png">
+                </nav>
+            </div>
+        </div>
+
+<!-- Music Portfolio -->
+
+        <!--- TODO: Would be nice to add more info about arrangment process, tools used, ect... -->
+
+        <div id="portfolioMusic">
+            <div class="general">
+                <h1 class="centerTitle"><span>Music</span> Work</h1>
+                <hr>
+                <p class="contentTitles">Fight For <span>Asran</span></p>
+                <div class="row">
+                    <div class="column1">
+                        <p>
+                            My newest piece for DigiPen's Jazz Dragons arranged throughout late 2024 and into early 2025.
+                            First debuted by the Jazz Dragons in late April of the same year.
+                            Originally called <i>Oil Field Base</i> and done as an arrangement of the level of the same name, 
+                            this piece turned into a suite with custom transitions to showcase some of my favorite songs 
+                            and moments from the SNES classic <i>U.N. Squadron</i>. All music transcribed and arranged was 
+                            composed by Manami Matsumae and helps to convey the journey as you fight for the mighty
+                            country of Asran.
+                        </p>
+                    </div>
+                    <div class="column2">
+                        <iframe 
+                            width="560" height="315" 
+                            src="https://www.youtube.com/embed/rk4gtOu_ciA?si=vdpJdIsKvKST4Ghu"
+                            title="YouTube video player" frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                        </iframe>
+                        <a href="https://musescore.com/user/40012312/scores/21072727/s/5RSGGl?share=copy_link" class="linkButton">View Sheet Music</a>
+                    </div>
+                </div> 
+                <hr>
+                <p class="contentTitles"><span>Driftveil</span> City</p>
+                <div class="row">
+                    <div class="column1">
+                        <p>
+                            This piece was arranged in June of 2024 and brought to
+                            DigiPen's Jazz Dragons in September of the same year,
+                            where we performed it for the first time that December. 
+                            <i>Driftveil City</i> comes from <i>Pokemon Black and White</i> and 
+                            was composed by Hitomi Sato featuring an iconic melody, 
+                            deep groovy bassline, and some perfect jazzy chords for 
+                            a 12-piece jazz ensemble.
+                        </p>
+                    </div>
+                    <div class="column2">
+                        <iframe width="560" height="315" 
+                            src="https://www.youtube.com/embed/pr9XvBPXkc0?si=nkje9yAZuADmTuOV" 
+                            title="YouTube video player" frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                        </iframe>
+                        <a href="https://musescore.com/user/40012312/scores/13892938?share=copy_link" class="linkButton">View Sheet Music</a>
+                    </div>
+            </div>
+        </div>
+
+<!-- Copyright -->
+
+        <div class="copyright">
+            <P>Manoel McCadden © 2025 - 2026</P>
+        </div>
+    <script src="prism.js"></script>
+    <script src="scripts.js"></script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzmRUixy1cXYwNnBz4NegkVFlVKUmKkKDVPShazmAJhmtUH4b-y7dMLIZpYlV-0DdaZGw/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg");
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => 
+            {
+                msg.innerHTML = "Your message has been sent!"
+                form.reset()
+                setTimeout(function()
+                {
+                    msg.innerHTML = ""
+                }, 5000)
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+    </body>
+</html>

@@ -36,6 +36,11 @@ body
     background-size: cover;
     background-position: center;
 }
+#headerNoImg
+{
+    width: 100vw;
+    height: 20vh;
+}
 
 /* Handles the changing text transition styling */
 #changingTitle
@@ -62,15 +67,6 @@ nav
     position: fixed;
     top: 0;
     width: 100%;
-    background: #231e2500;
-    transition: 0.5s;
-}
-/*
-    Using a js script we can handle a scrollable effect causing
-    the nav bar to solidify after scrolling
-*/
-nav.scroll
-{
     background: #322936;
     height: 115px;
     /*Set to z layer so high to ensure nothing is shown above it*/
@@ -168,10 +164,20 @@ nav ul li a:hover::after
 {
     color: #e1bb59;
 }
+.general hr
+{
+  margin: 5% 0;
+}
 .row
 {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+}
+.rowCenter
+{
+    display: flex;
+    justify-content: center;
     flex-wrap: wrap;
 }
 .row p
@@ -180,6 +186,16 @@ nav ul li a:hover::after
     text-align: left;
     font-size: 20px;
 }
+.brief
+{
+    padding: 5% 30px;
+    text-align: left;
+    font-size: 20px;
+}
+.brief p
+{
+    text-align: center;
+}
 .column1
 {
     flex-basis: 60%;
@@ -187,7 +203,6 @@ nav ul li a:hover::after
 .column2
 {
     flex-basis: 35%;
-    justify-content: center;
 }
 
 
@@ -201,42 +216,47 @@ nav ul li a:hover::after
     padding: 80px 0;
     color: #fff;
 }
-.aboutText span
-{
-    color: #e1bb59;
-}
-.aboutTitle
+.centerTitle
 {
     font-size: 60px;
     font-weight: 600;
     text-align: center;
 }
+.centerTitle span
+{
+    color: #a438c1;
+}    
 
 /*
     Skills/Education/Experince Section
 */
 .infoNames
 {
-    margin-right: 40px;
+    text-align: center;
+    padding: 0 0 5% 0;
     position: relative;
+    font-size: 60px;
+    font-weight: 600;
+}
+.infoNames span
+{
+    color: #a438c1;
 }
 .infoDetails ul li
 {
     list-style: none;
-    margin: 5px 15px;
-    line-height: 1.5;
-    font-size: 18px;
+    padding: 2%;
+    font-size: 20px;
+    text-align: left;
 }
 .infoDetails ul li .spanTitle
 {
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 600;
 }
 .infoDetails ul li .spanDetails
 {
     color: #fff;
-    display: inline-block;
-    margin-left: 5px;
 }
 
 /*
@@ -246,27 +266,22 @@ nav ul li a:hover::after
     font-size: 60px;
     font-weight: 600;
 }
+.sectionTitle span
+{
+    color: #a438c1;
+}
+
 .contentTitles
 {
     margin: 15px 10px;
     font-size: 40px;
-    font-weight: 400;
-}
-.contentTitles span
-{
-    color: #a438c1;
+    font-weight: 600;
+    text-align: center;
 }
 
 /* 
     Programming Portfolio
 */
-
-/* Defines where to position when nav bar locates */
-#portfolioProgramming
-{
-    scroll-margin-top: 60px;
-    padding: 5% 0;
-}
 
 .codeButtons
 {
@@ -288,10 +303,6 @@ nav ul li a:hover::after
     Music Portfolio
 */
 
-#portfolioMusic
-{
-    scroll-margin-top: 150px;
-}
 
 /*
     Contact
@@ -314,7 +325,7 @@ nav ul li a:hover::after
 {
     display: flex;
     flex-direction: column;
-    padding: 30px 0;
+    padding: 25px 0;
     font-size: 25px;
 }
 .mainContact
@@ -332,7 +343,6 @@ nav ul li a:hover::after
 }
 .mainContact img
 {
-    margin-left: 100px;    
     filter: 
         invert(30%) 
         sepia(61%) 
@@ -340,6 +350,7 @@ nav ul li a:hover::after
         hue-rotate(267deg) 
         brightness(85%) 
         contrast(92%);
+    transform: translate(0%, 8%);
     transition: 0.3s;
 }
 .mainContact:hover img
@@ -351,20 +362,12 @@ nav ul li a:hover::after
         hue-rotate(357deg) 
         brightness(92%) 
         contrast(91%);
-}
-/* Add a 5px buffer to phone icon */
-.mainContact .phoneIcon
-{
-    margin-left: 105px;
+    transform: translate(0%, -12%)
 }
 /* Icon settings with margins and colors */
 .emailIcon
 {
     width: 40px;
-}
-.phoneIcon
-{
-    width: 35px;
 }
 /* Social icon colors/size/padding */
 .socials a
@@ -609,15 +612,6 @@ form input, form textarea
         margin-right: 50px;
         width: 75px;
     }
-    /* Adjust header scroll for mobile */
-    #portfolioProgramming
-    {
-        scroll-margin-top: 110px;
-    }
-    #contact
-    {
-        scroll-margin-top: 110px;
-    }
     /* adjust the nav bar into a column flex */
     nav
     {
@@ -661,12 +655,6 @@ form input, form textarea
     {
         flex-basis: 100%;
     }
-
-    /* handles about section resizing */
-    .aboutTitle
-    {
-        text-align: left;
-    }    
     /* handles skills */
     .infoNames
     {
@@ -675,20 +663,6 @@ form input, form textarea
     .infoDetails ul li
     {
         margin: 5px 25px;
-    }
-
-    .centerItems {
-        align-items: flex-start;
-    }
-
-    .mainContact img 
-    {
-        margin-left: 0px;
-    }
-
-    .mainContact .phoneIcon
-    {
-        margin-left: 5px;
     }
 
     .mainContact p 
@@ -731,12 +705,6 @@ form input, form textarea
         margin: 0% 30px;
     }
 
-    /* handles submit form spacing */
-    form input, form textarea
-    {
-        margin: 15px 0;
-    }
-
     .copyright
     {
         width: 100vw;
@@ -747,11 +715,6 @@ form input, form textarea
         .header-text h1
         {
             font-size: 50px;
-        }
-
-        .mainContact p 
-        {
-            font-size: 18px;
         }
     }
 }
