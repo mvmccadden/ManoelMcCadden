@@ -182,13 +182,13 @@ nav ul li a:hover::after
 }
 .row p
 {
-    padding: 5% 30px;
+    padding: 5% 5%;
     text-align: left;
     font-size: 20px;
 }
 .brief
 {
-    padding: 5% 30px;
+    padding: 5% 5%;
     text-align: left;
     font-size: 20px;
 }
@@ -212,8 +212,7 @@ nav ul li a:hover::after
 
 #about
 {
-    scroll-margin-top: 70px;
-    padding: 80px 0;
+    padding: 40px 0;
     color: #fff;
 }
 .centerTitle
@@ -245,7 +244,7 @@ nav ul li a:hover::after
 .infoDetails ul li
 {
     list-style: none;
-    padding: 2%;
+    padding: 2% 5%;
     font-size: 20px;
     text-align: left;
 }
@@ -563,7 +562,7 @@ form input, form textarea
     }
     .codeButtons
     {
-      max-width: 97.25%;
+      width: 100%;
     }
     .linkButton
     {
@@ -656,14 +655,6 @@ form input, form textarea
         flex-basis: 100%;
     }
     /* handles skills */
-    .infoNames
-    {
-        margin-left: 15px;
-    }
-    .infoDetails ul li
-    {
-        margin: 5px 25px;
-    }
 
     .mainContact p 
     {
@@ -686,7 +677,7 @@ form input, form textarea
     .linkButton
     {
         width: 90%;
-        margin: 0% 30px;
+        margin: 0% 5%;
     }
 
     /* handles video placement */
@@ -695,26 +686,30 @@ form input, form textarea
         width: 90%;
         height: 100%;
         aspect-ratio: 2/1;
-        margin: 0% 30px;
+        margin: 0% 5%;
     }
     #exampleImages
     {
         width: 90%;
         height: 100%;
         aspect-ratio: 2/1;
-        margin: 0% 30px;
+        margin: 0% 5%;
     }
 
     .copyright
     {
         width: 100vw;
     }
+}
 
-    @media (max-width: 400px)
+@media (max-width: 600px)
+{
+    #contact
     {
-        .header-text h1
-        {
-            font-size: 50px;
-        }
+      margin: 10% 0;
+    }
+    .header-text h1
+    {
+        font-size: 50px;
     }
 }
