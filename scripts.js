@@ -94,8 +94,6 @@ function AdjustMobileMenu()
     {
         menuImg.src = "images/close.png";
     }
-    // Move the menu button to the correct place
-    menuImg.classList.toggle("moveMenu")
     // Turns off logo
     document.getElementById("logo").classList.toggle("disableDisplay");
     // Enable header text and background

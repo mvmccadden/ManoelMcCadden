@@ -609,46 +609,37 @@ iframe
     {
         display: none;
     }
-    /* turn on display for close */
-    .moveMenu
-    {
-        margin-bottom: 22%;
-    }
     /* Enable menu button on smaller screens */
     #menu
     {
         display: block;
         cursor: pointer;
-        margin-right: 50px;
+        position: absolute;
+        top: 20px;
+        right: 5%;
         width: 75px;
     }
     /* adjust the nav bar into a column flex */
     nav
     {
-        justify-content: space-between;
+        display: flex;
         background: #322936;
         height: 115px;
         transition: 0.1s;
     }
-    nav img
-    {
-        align-self: center;
-    }
     nav ul
     {
         flex-direction: column;
-        align-items: flex-start;
-        justify-content: center;
+        width: 100%;
+    }
+    nav ul li
+    {
+      margin: 5%;
     }
     nav ul li a
     {
         display: none;
-        width: 100%;
         font-size: 40px;
-        text-align: center;
-        justify-self: center;
-        align-self: flex-start;
-        position: normal;
         color: #ffffff;
     }
 
