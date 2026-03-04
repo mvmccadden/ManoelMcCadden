@@ -451,6 +451,7 @@ button
     display: block;
     margin-top: 40px;
     margin-bottom: 15px;
+    margin: 5% 2%;
     width: 560px;
     color: #fff;
     padding: 14px 50px;
@@ -527,6 +528,16 @@ form input, form textarea
     font-weight: 300;
     margin-top: 20px;
 }
+
+iframe
+{
+  margin: 0 2%;
+}
+#exampleImages
+{
+  margin: 0 2%;
+}
+
 
 /*
     CSS for small screens --> ANYTHING BELOW 850px WIDTH
