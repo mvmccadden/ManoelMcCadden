@@ -31,6 +31,7 @@ document.addEventListener('DOMContentLoaded', () =>
     fetchAndDisplayCode('code/fmodLPFandBeatTrackingImplementation.cpp', 'code4');
     fetchAndDisplayCode('code/websynthWaveshape.js', 'codeWebSynthJs');
     fetchAndDisplayCode('code/arms_filterapply.cpp', 'codeARMSFilter');
+    fetchAndDisplayCode('code/reverb_moorefilter.cpp', 'codeMooreReverb');
 });
 
 function toggleCode(id)
