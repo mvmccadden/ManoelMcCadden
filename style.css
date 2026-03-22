@@ -204,6 +204,24 @@ nav ul li a:hover::after
 {
     flex-basis: 35%;
 }
+.columnCenter
+{
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.columnEven
+{
+    flex-basis: 50%;
+}
+.columnEven p
+{
+    padding: 5% 5%;
+    text-align: center;
+    font-size: 60px;
+    font-weight: 600;
+}
 
 
 /*
@@ -287,7 +305,7 @@ nav ul li a:hover::after
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0 30px;
+    padding: 0% 5%;
 }
 .codeButtons pre
 {
@@ -451,7 +469,7 @@ button
     display: block;
     margin-top: 40px;
     margin-bottom: 15px;
-    margin: 5% 2%;
+    margin: 2% 5% 0% 5%;
     width: 560px;
     color: #fff;
     padding: 14px 50px;
@@ -480,7 +498,7 @@ button
 .button3
 {
     width: 50%;
-    margin: 15px 0;
+    margin: 1%;
 }
 button:hover
 {
@@ -531,11 +549,11 @@ form input, form textarea
 
 iframe
 {
-  margin: 0 2%;
+  margin: 0 5%;
 }
 #exampleImages
 {
-  margin: 0 2%;
+  margin: 0 5%;
 }
 
 
@@ -570,10 +588,6 @@ iframe
     #exampleImages
     {
         width: 95%
-    }
-    .codeButtons
-    {
-      width: 100%;
     }
     .linkButton
     {
@@ -656,6 +670,14 @@ iframe
     {
         flex-basis: 100%;
     }
+    .columnEven
+    {
+        flex-basis: 100%;
+    }
+    .columnEven a
+    {
+      margin: 1%;
+    }
     /* handles skills */
 
     .mainContact p 
@@ -679,7 +701,6 @@ iframe
     .linkButton
     {
         width: 90%;
-        margin: 0% 5%;
     }
 
     /* handles video placement */
